@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+/* ========== Navbar Styling ========== */
+nav {
+    border: 2px solid black;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    vertical-align: middle;
+}
+
+li {
+    float: left;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+}
+/* ========== Index Styling ========== */
+/* Parallax Styling */
+.para1, .para2, .para3 {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .para1 {
+    background-image: url("/images/para1.jpg");
+  }
+
+  .para2 {
+    background-image: url("/images/para2.jpg");
+  }
+
+  .para3 {
+    background-image: url("/images/para3.jpg");
+  }
