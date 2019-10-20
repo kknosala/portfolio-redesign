@@ -36,41 +36,36 @@ li {
     padding: 10px;
 }
 /* ========== Index Styling ========== */
-.intro {
-    margin: auto;
-    height: auto;
-    width: 60%;
+.index-container {
     position: relative;
-    top: 150px;
+    top: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh, 50vh, 50vh;
+    grid-template-areas: 
+        'intro'
+        'about'
+        'port';
+}
+.index-main {
     text-align: center;
+    background-color: turquoise;
+    grid-area: intro;
 }
-
-#profile-pic {
-    border-radius: 50%;
-    width: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+.index-about {
+    background-color: silver;
+    grid-area: about;
 }
-/* Parallax Styling */
-.para1, .para2, .para3 {
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .para1 {
-    background-image: url("/images/para1.jpg");
-  }
-
-  .para2 {
-    background-image: url("/images/para2.jpg");
-  }
-
-  .para3 {
-    background-image: url("/images/para3.jpg");
-  }
+/* .about1 {
+    grid-area: about1;
+}
+.about2 {
+    grid-area: about2;
+}
+.about3 {
+    grid-area: about3;
+} */
+.index-portfolio {
+    background-color: darkkhaki;
+    grid-area: port;
+}
