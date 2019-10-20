@@ -16,8 +16,6 @@ a {
     position: relative;
     top: 0;
     width: 100%;
-    /* transition: top 0.3s;
-    z-index: 1; */
 }
 
 ul {
@@ -45,35 +43,48 @@ li {
         'about'
         'port';
 }
+/* Index Main Styling */
 .index-main {
     text-align: center;
     background-color: turquoise;
     height: 100vh;
     grid-area: intro;
 }
+.index-intro {
+    font-size: 300%;
+}
+/* Index About Stlying */
 .index-about {
     background-color: silver;
     grid-area: about;
+    height: 400px;
 }
 .index-about-grid {
     display: grid;
+    margin-left: 50px;
+    margin-right: 50px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 15px;
 }
-/* .about1 {
-    grid-area: about1;
+.index-about-text {
+    padding: 20px;
 }
-.about2 {
-    grid-area: about2;
-}
-.about3 {
-    grid-area: about3;
-} */
+/* Index Portfolio Styling */
 .index-portfolio {
     background-color: darkkhaki;
     grid-area: port;
-    
+    height: 650px;
+    text-align: center;
+    padding: 10px;
 }
-.index-portfolio-display {
+.index-portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 15px;
+}
+.index-portfolio-item {
+    padding: 20px;
+}
+.index-port-image {
+    width: 250px;
 }
