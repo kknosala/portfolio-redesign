@@ -88,3 +88,33 @@ li {
 .index-port-image {
     width: 250px;
 }
+/* ========== Portfolio Styling ========== */
+.portfolio-container {
+    background-color: tan;
+    text-align: center;
+    width: 90%;
+    position: relative;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto, auto;
+    grid-row-gap: 10px;
+    grid-template-areas:
+        "title" 
+        "display";
+}
+.portfolio-title {
+    grid-area: title;
+}
+.portfolio-display {
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-area: display;
+}
+.portfolio-project {
+    background-color: beige;
+}
+.portfolio-project-image {
+    width: 250px;
+}
