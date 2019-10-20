@@ -13,7 +13,4 @@ module.exports = function(app) {
         res.render('contact');
     });
 
-    app.get('/recomendations', function(req, res) {
-        res.render('recomend');
-    })
 }
