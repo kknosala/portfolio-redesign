@@ -13,11 +13,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
-    transition: top 0.3s;
-    z-index: 1;
+    /* transition: top 0.3s;
+    z-index: 1; */
 }
 
 ul {
@@ -37,11 +37,9 @@ li {
 }
 /* ========== Index Styling ========== */
 .index-container {
-    position: relative;
-    top: 60px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh, 50vh, 50vh;
+    grid-template-rows: auto, auto, auto;
     grid-template-areas: 
         'intro'
         'about'
@@ -50,11 +48,16 @@ li {
 .index-main {
     text-align: center;
     background-color: turquoise;
+    height: 100vh;
     grid-area: intro;
 }
 .index-about {
     background-color: silver;
     grid-area: about;
+}
+.index-about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 /* .about1 {
     grid-area: about1;
@@ -68,4 +71,9 @@ li {
 .index-portfolio {
     background-color: darkkhaki;
     grid-area: port;
+    
+}
+.index-portfolio-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
