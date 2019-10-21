@@ -1,0 +1,72 @@
+
+/* ========== Index Styling ========== */
+.index-container {
+    position: relative;
+    top: 10px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 50px repeat(2, 1fr) 350px 50px;
+    grid-template-rows: auto, auto;
+    grid-template-areas: 
+        '. intro intro about .'
+        '. port port port .';
+}
+/* Index Main Styling */
+.index-main {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-color: #cccccc;
+    grid-area: intro;
+    padding: 10px;
+}
+.index-intro {
+    font-size: 300%;
+}
+/* Index About Stlying */
+.index-about {
+    grid-area: about;
+    padding: 15px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-color: #cccccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+#profile-pic {
+    width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid teal;
+}
+
+/* Index Portfolio Styling */
+.index-portfolio {
+    grid-area: port;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-color: #cccccc;
+    text-align: center;
+}
+.index-portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 15px;
+}
+.index-portfolio-item {
+    padding: 20px;
+}
+.index-port-image {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #cccccc;
+}
