@@ -1,81 +1,61 @@
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
-a {
-    text-decoration: none;
-}
-/* ========== Navbar Styling ========== */
-#navbar {
-    background-color: white;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 0;
-    width: 100%;
-}
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    list-style-type: none;
-    vertical-align: middle;
-}
-
-li {
-    float: left;
-    text-align: center;
-    font-size: 17px;
-    padding: 10px;
-}
 /* ========== Index Styling ========== */
 .index-container {
+    position: relative;
+    top: 10px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto, auto, auto;
+    grid-gap: 5px;
+    grid-template-columns: 50px repeat(2, 1fr) 350px 50px;
+    grid-template-rows: auto, auto;
     grid-template-areas: 
-        'intro'
-        'about'
-        'port';
+        '. intro intro about .'
+        '. port port port .';
 }
 /* Index Main Styling */
 .index-main {
-    text-align: center;
-    background-color: turquoise;
-    height: 100vh;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-color: #cccccc;
     grid-area: intro;
+    padding: 10px;
 }
 .index-intro {
     font-size: 300%;
 }
 /* Index About Stlying */
 .index-about {
-    background-color: silver;
     grid-area: about;
-    height: 400px;
+    padding: 15px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-color: #cccccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
-.index-about-grid {
-    display: grid;
-    margin-left: 50px;
-    margin-right: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 15px;
+#profile-pic {
+    width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid teal;
 }
-.index-about-text {
-    padding: 20px;
-}
+
 /* Index Portfolio Styling */
 .index-portfolio {
-    background-color: darkkhaki;
     grid-area: port;
-    height: 650px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-color: #cccccc;
     text-align: center;
-    padding: 10px;
 }
 .index-portfolio-grid {
     display: grid;
@@ -87,6 +67,8 @@ li {
 }
 .index-port-image {
     width: 250px;
+    height: 250px;
+    border: 2px solid #cccccc;
 }
 /* ========== Portfolio Styling ========== */
 .portfolio-container {
@@ -114,9 +96,11 @@ li {
 }
 .portfolio-project {
     background-color: beige;
+    padding: 15px;
 }
 .portfolio-project-image {
     width: 250px;
+    height: 250px;
 }
 /* ========== Contact Page Styling ========== */
 .contact-container {
