@@ -1,5 +1,6 @@
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
   width: 100%;
   margin: 0;
   font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
@@ -8,66 +9,66 @@ html, body {
   color: #777777;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 h1 {
-    font-size: 72px;
-    font-weight: bold;
-    margin: 0;
-  }
-  h2 {
-    color: teal;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #777777;
-  }
-  a:hover {
-    color: teal;
-    transition: all 0.2s ease-in-out;
-    transform: scale(1.1);
-    text-decoration: none;
-  }
+  font-size: 72px;
+  font-weight: bold;
+  margin: 0;
+}
+h2 {
+  color: teal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #777777;
+}
+a:hover {
+  color: teal;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+  text-decoration: none;
+}
 /* ========== Main Styling ========== */
 /* Header Styling */
 .header {
-    height: 116px;
-    position: relative;
-    top: 0;
-    width: 100%;
-    text-align: center;
+  height: 116px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  text-align: center;
 }
 #header-name {
-    font-family: "Georgia", "Times New Roman", Times, serif;
+  font-family: "Georgia", "Times New Roman", Times, serif;
   background-color: #ffffff;
   color: teal;
 }
 /* Navbar */
 #navbar {
-    background-color: white;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 4px solid;
-    border-color: #cccccc;
+  background-color: white;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4px solid;
+  border-color: #cccccc;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    list-style-type: none;
-    vertical-align: middle;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  vertical-align: middle;
 }
 
 li {
-    float: left;
-    text-align: center;
-    font-size: 17px;
-    padding: 10px;
+  float: left;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
 }

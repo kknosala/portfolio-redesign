@@ -5,5 +5,5 @@ module.exports = function(app) {
         db.Contact.create(req.body).then(function(results) {
           res.json(results);
         });
-      });
+    });
 }

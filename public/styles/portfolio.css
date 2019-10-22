@@ -1,38 +1,38 @@
 /* ========== Portfolio Styling ========== */
 .portfolio-container {
-    background-color: #ffffff;
-    box-sizing: border-box;
-    border: 2px solid;
-    border-color: #cccccc;
-    text-align: center;
-    width: 90%;
-    position: relative;
-    top: 10px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto, auto;
-    grid-row-gap: 10px;
-    grid-template-areas:
-        "title" 
-        "display";
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-color: #cccccc;
+  text-align: center;
+  width: 90%;
+  position: relative;
+  top: 10px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto, auto;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "title"
+    "display";
 }
 .portfolio-container h2 {
-    padding: 10px;
+  padding: 10px;
 }
 .portfolio-title {
-    grid-area: title;
+  grid-area: title;
 }
 .portfolio-display {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-area: display;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-area: display;
 }
 .portfolio-project {
-    padding: 15px;
+  padding: 15px;
 }
 .portfolio-project-image {
-    width: 250px;
-    height: 250px;
+  width: 250px;
+  height: 250px;
 }
